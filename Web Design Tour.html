@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #66c2ff;
+  font-family: Arial;
+  padding: 30px;
+  text-align: center;
+  font-size: 5vw
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 20%;
+  height: 1400px;
+  background: #80b3ff;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  font-family: Times;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  height: 1400px;
+  background-color: #0052cc;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #000000;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 800px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+  
+}
+
+a:link {
+   color:white;
+}
+
+a:hover {
+  color: lightblue;
+}
+
+a:visited {
+    color: white;
+}
+
+img {
+    max-height: 100%
+    max-width: 100%1
+}
+
+p {
+	color: white;
+}
+
+ol {
+	color: white;
+    text-align: left;
+}
+
+</style>
+</head>
+<body>
+
+
+<header>
+  <h2> 𝕋𝕆𝕆𝕃 <h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">Home Page</a></li>
+      <li><a href="#">About the Band</a></li>
+      <li><a href="#">Top Albums</a></li>
+      <li><a href="#">Media</a></li>
+      <li><a href="#">Tour</a></li>
+    </ul>
+    <img src="https://www.grande-rock.com/sites/default/files/styles/head/public/imagesreports/tool-logo.jpg?itok=8URZcnZ6"width=150 hight=100/>
+  </nav>
+  
+  <article>
+	<h1 style="font-size:50px;color:white;border:black;border:5px solid black;">Tour</h1>
+    
+    <table align="center" style="font-size:20px;">
+
+    
+    <tr>
+    <td> Apr 17 Orlando, FL, US Amway Center</td>
+    </tr>
+    <tr>
+    <td> Apr 19 Tampa, FL, US Amalie Arena</td>
+    </tr>
+    <tr>
+    <td> Apr 21 Charlotte, NC, US Spectrum Center</td>
+    </tr>
+    <tr>  
+    <td> Spectrum Center Apr 22 Charlottesville, VA, US John Paul Jones Arena</td>
+    </tr>
+    <tr>
+    <td> Apr 24 Baltimore, MD, US Royal Farms Arena</td>
+    </tr>
+    <tr>
+    <td> Apr 25 Uniondale, NY, US NYCB LIVE: Home of the Nassau Veterans Memorial Coliseum</td>
+    </tr>
+    <tr>
+    <td> Apr 28 Montreal, QC, Canada Bell Centre</td>
+    </tr>
+    <tr>
+    <td> Apr 29 Québec, QC, Canada Centre Videotron</td>
+    </tr>
+    <tr>
+    <td> May 1 Wilkes-barre, PA, US Mohegan Sun Arena at Casey Plaza</td>
+    </tr>
+    <tr>
+    <td> May 2 Buffalo, NY, US KeyBank Center</td>
+    </tr>
+    <tr>
+    <td> May 2 Buffalo, NY, US</td>
+    </tr>
+    <tr>
+    <td> May 4 Toledo, OH, US</td>
+    </tr>
+    </table>
+   
+    
+    <h1 style="font-size:50px;color:white;border:black;border:5px solid black;">Buy Tickets</h1>
+    <iframe src="https://www.ticketmaster.com/tool-tickets/artist/720703" height=500 width=700></iframe>
+   
+  </article>
+  
+</section>
+
+<footer>
+  <i>Copyright &copy; 2020 Ian Webb. All Rights Reserved.</i>
+</footer>
+
+</body>
+</html>
